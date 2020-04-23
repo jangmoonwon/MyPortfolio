@@ -1,31 +1,35 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  height: 100%;
-  width: 30%;
-  background-color: #ddd;
+  height: 50px;
+  width: 100%;
+  background-color: #333333;
+  
 `;
-const RouteButton = styled(Link)`
-    margin: 5px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
+
+const LinkButton = styled(Link)`
+  justify-content: center;
+  margin: auto;
+  text-decoration: none;
+  color: #cccccc;
+  font-size: 23px;
+  font-weight: 300;
+  &:hover{
+    color: #ffffff;
+  }
 `;
 
 function Tab() {
   return (
-    <Container color="#fff">
-      <RouteButton to="/">Overview</RouteButton>
-      <RouteButton to="/button">Comp1</RouteButton>
-      <RouteButton to="/text-input">Comp2</RouteButton>
-      <RouteButton to="/toggle-switch">Comp3</RouteButton>
+    <Container>
+      <LinkButton to="/">HOME</LinkButton>
+      <LinkButton to="/text-input">TextInput</LinkButton>
     </Container>
   );
 }
