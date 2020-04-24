@@ -8,9 +8,10 @@ const GlobalStyle = createGlobalStyle`
 	body {
 		padding: 0;
 		margin: 0;
-    background-color: #fff;
+    background-color: #ffffff;
 	}
 `;
+
 const Container = styled.div`
   display: flex;
   width: 100%;
@@ -20,7 +21,7 @@ const Container = styled.div`
 
 const ContentContainer = styled(Container)`
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #131313;
 `;
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
         <ContentContainer>
           <Tab />
           <RootRouter />
-          </ContentContainer>
+        </ContentContainer>
       </BrowserRouter>
     </Container>
   );

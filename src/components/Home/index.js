@@ -29,6 +29,7 @@ const Title = styled.div`
   font-size: 35px;
   height: 20vh;
   margin-top: -15vh;
+  color: #ffffff;
 `;
 
 const Main = styled.div`
@@ -36,14 +37,15 @@ const Main = styled.div`
   font-weight: 900;
   height: 20vh;
   margin-top: 15vh;
+  color: #ffffff;
 `;
 
 const LinkButton = styled(Link)`
   margin-top: 15vh;
   text-decoration: none;
   font-size: 25px;
-  color: #131313;
+  color: #ffffff;
   &:hover {
-    color: #ff4757
+    color: #536DFE;
   }
 `;

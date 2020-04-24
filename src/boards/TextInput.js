@@ -1,15 +1,15 @@
-import React, {useState} from 'react';
-import {TextInput} from '../components';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import { TextInput } from "../components";
+import styled from "styled-components";
 
 function TextInputBoard() {
   const [state, setState] = useState({
-    userid_1: '',
-    userid_2: '',
-    userid_3: '',
-    userpwd_1: '',
-    userpwd_2: '',
-    userpwd_3: '',
+    userid_1: "",
+    userid_2: "",
+    userid_3: "",
+    userpwd_1: "",
+    userpwd_2: "",
+    userpwd_3: "",
   });
 
   function handleChange(e) {
@@ -97,6 +97,11 @@ export default TextInputBoard;
 const Content = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
 `;
 
 const P = styled.div`
@@ -105,7 +110,7 @@ const P = styled.div`
   padding: 10px;
   border-bottom: 2px solid #dee2e6;
   font-size: 30px;
-  color: #495057;
+  color: #dee2e6;
   cursor: default;
 `;
 

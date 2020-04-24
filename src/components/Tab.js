@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-
 const Container = styled.div`
   display: flex;
   flex-direction: row;
@@ -10,7 +9,6 @@ const Container = styled.div`
   height: 50px;
   width: 100%;
   background-color: #333333;
-  
 `;
 
 const LinkButton = styled(Link)`
@@ -20,7 +18,7 @@ const LinkButton = styled(Link)`
   color: #cccccc;
   font-size: 23px;
   font-weight: 300;
-  &:hover{
+  &:hover {
     color: #ffffff;
   }
 `;

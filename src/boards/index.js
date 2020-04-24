@@ -1,3 +1,3 @@
 import TextInputBoard from './TextInput';
 
-export {TextInputBoard, };
+export {TextInputBoard };

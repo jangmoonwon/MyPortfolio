@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 export default function Input(props) {
   const {
     mode,
@@ -31,6 +32,7 @@ export default function Input(props) {
 }
 
 const Container = styled.input`
+  background-color: #ffffff;
   width: 170px;
   border: ${(props) => {
     if (props.id === 'userid_1' || props.id === 'userpwd_1') return '0';
@@ -57,7 +59,7 @@ const Container = styled.input`
   }};
   box-shadow: none;
   font-size: 20px;
-  color: black;
+  color: #ffffff;
   &:focus ~ label,
   &:valid ~ label {
     font-size: 14px;
@@ -71,7 +73,7 @@ const Container = styled.input`
     text-align: center;
     font-size: 15px;
     color: ${(props) => {
-      if (props.id === 'userid_2' || props.id === 'userpwd_2') return '#34495e';
+      if (props.id === 'userid_2' || props.id === 'userpwd_2') return '#ffffff';
       if (props.id === 'userid_3' || props.id === 'userpwd_3') return '#c0392b';
     }};
   }
