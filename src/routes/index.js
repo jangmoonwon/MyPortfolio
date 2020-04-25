@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Home from "../components/Home";
 import Detaile from "../components/Detaile";
 import { TextInputBoard } from "../boards";
+import { TestBoard } from "../boards";
 
 const Container = styled.div`
   display: flex;
@@ -20,6 +21,7 @@ const RootRouter = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/text-input" component={TextInputBoard} />
+        <Route path="/test" component={TestBoard} />
         <Route path="/Detaile" component={Detaile} />
         <Route path="/">찾을 수 없는 페이지입니다.</Route>
       </Switch>

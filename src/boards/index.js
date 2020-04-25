@@ -1,3 +1,4 @@
 import TextInputBoard from './TextInput';
+import TestBoard from './Test';
 
-export {TextInputBoard };
+export {TextInputBoard, TestBoard };

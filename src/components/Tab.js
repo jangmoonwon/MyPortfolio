@@ -28,6 +28,7 @@ function Tab() {
     <Container>
       <LinkButton to="/">HOME</LinkButton>
       <LinkButton to="/text-input">TextInput</LinkButton>
+      <LinkButton to="/test">TEST</LinkButton>
     </Container>
   );
 }
