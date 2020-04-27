@@ -11,7 +11,8 @@ function Home() {
         <br />
         그러나 특별함.
       </Main>
-      <LinkButton to="/Detaile">더 알아보기 〉</LinkButton>
+      <LinkButton to="/Profile">더 알아보기 〉</LinkButton>
+      \
     </Container>
   );
 }

@@ -2,9 +2,9 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import styled from "styled-components";
 import Home from "../components/Home";
-import Detaile from "../components/Detaile";
-import { TextInputBoard } from "../boards";
-import { TestBoard } from "../boards";
+import Profile from "../components/Profile";
+import Contents from "../components/Contents";
+import Error from "../components/Error";
 
 const Container = styled.div`
   display: flex;
@@ -20,10 +20,9 @@ const RootRouter = () => {
     <Container>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/text-input" component={TextInputBoard} />
-        <Route path="/test" component={TestBoard} />
-        <Route path="/Detaile" component={Detaile} />
-        <Route path="/">찾을 수 없는 페이지입니다.</Route>
+        <Route path="/profile" component={Profile} />
+        <Route path="/contents" component={Contents} />
+        <Route path="/" component={Error} />
       </Switch>
     </Container>
   );

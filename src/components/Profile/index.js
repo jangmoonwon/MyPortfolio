@@ -2,16 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-function Detaile() {
+function Profile() {
   return (
     <Container>
-      <Contents>This is Detaile Pages.</Contents>
-      <LinkButton to="/">홈으로 가기</LinkButton> {/*홈 아이콘으로 대체 예정*/}
+      <Contents>
+      포트폴리오 소개 <br/>
+      <br/>
+      프로필 소개
+      </Contents>
+      <LinkButton to="/">홈으로 가기</LinkButton> 
     </Container>
   );
 }
 
-export default Detaile;
+export default Profile;
 
 const Container = styled.div`
   display: flex;
@@ -27,10 +31,10 @@ color: #ffffff;
 
 const LinkButton = styled(Link)`
   margin-top: 40vh;
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   color: #ffffff;
   &:hover {
-    color: #ff4757;
+    color: #536DFE;;
   }
 `;
