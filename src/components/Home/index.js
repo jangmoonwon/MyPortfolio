@@ -12,7 +12,6 @@ function Home() {
         그러나 특별함.
       </Main>
       <LinkButton to="/Profile">더 알아보기 〉</LinkButton>
-      \
     </Container>
   );
 }
@@ -47,6 +46,6 @@ const LinkButton = styled(Link)`
   font-size: 25px;
   color: #ffffff;
   &:hover {
-    color: #536DFE;
+    color: #536dfe;
   }
 `;
