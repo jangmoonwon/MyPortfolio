@@ -27,9 +27,9 @@ const ContentContainer = styled.div`
   text-align: center;
   justify-content: center;
   margin: auto;
-  background-color: #f2f2f2;
+  border: 2px solid #aaa69d;
   border-radius: 4.5px;
-  width: 85%;
+  width: 90%;
   height: 100vh;
 `;
 

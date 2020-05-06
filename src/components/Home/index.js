@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <Container>
-      <Title>iProject🅢</Title>
+      <Title>iProject 🆂</Title>
       <Main>
         노멀함.
         <br />

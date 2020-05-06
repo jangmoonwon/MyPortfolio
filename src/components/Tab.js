@@ -16,10 +16,10 @@ const LinkButton = styled(Link)`
   margin: auto;
   text-decoration: none;
   color: #cccccc;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 300;
   &:hover {
-    color: #ffffff;
+    color: #fff;
   }
 `;
 
