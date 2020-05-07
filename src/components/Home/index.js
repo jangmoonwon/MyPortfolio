@@ -47,5 +47,6 @@ const LinkButton = styled(Link)`
   color: #ffffff;
   &:hover {
     color: #536dfe;
+    transition: 0.3s;
   }
 `;

@@ -35,6 +35,7 @@ const LinkButton = styled(Link)`
   text-decoration: none;
   color: #ffffff;
   &:hover {
-    color: #536DFE;;
+    color: #536DFE;
+    transition: 0.3s;
   }
 `;
