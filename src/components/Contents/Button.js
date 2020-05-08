@@ -21,10 +21,10 @@ function Button(props) {
         <P>Ver.2 버튼</P>
         <BtnContainer>
           <LinkButton id="type-C">
-            더 알아보기 <Img src="/img/Plus.png" id="Plus" />
+            더 알아보기 <Img src="/img/Arrow.png" id="Arrow" />
           </LinkButton>
           <LinkButton id="type-C">
-            홈으로 가기 <Img src="/img/Apple.png" id="Apple" />
+            홈으로 가기 <Img src="/img/Logo.png" id="Logo" />
           </LinkButton>
         </BtnContainer>
       </ContentContainer>
@@ -36,12 +36,12 @@ export default Button;
 
 const Img = styled.img`
   width: ${(props) => {
-    if (props.id === "Plus") return "19px";
-    if (props.id === "Apple") return "21px";
+    if (props.id === "Arrow") return "19px";
+    if (props.id === "Logo") return "21px";
   }};
   height: ${(props) => {
-    if (props.id === "Plus") return "18px";
-    if (props.id === "Apple") return "21px";
+    if (props.id === "Arrow") return "18px";
+    if (props.id === "Logo") return "21px";
   }};
   color: red;
 `;
@@ -76,7 +76,7 @@ const Title = styled.div`
   color: #131313;
   margin-bottom: auto;
   padding: 40px;
-  background: linear-gradient(to right, #000000, #FD746C);
+  background: linear-gradient(to right, #000000, #fd746c);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -98,10 +98,11 @@ const LinkButton = styled(Link)`
     if (props.id === "type-A") return "#131313";
     if (props.id === "type-B-1") return "#6855e0";
     if (props.id === "type-B-2") return "#fff";
-    if (props.id === "type-C") return "#131313";
+    if (props.id === "type-C") return "#fff";
   }};
   background-color: ${(props) => {
     if (props.id === "type-B-2") return "#6855e0";
+    if (props.id === "type-C") return "#1e90ff";
   }};
   &:hover {
     color: ${(props) => {
@@ -113,23 +114,21 @@ const LinkButton = styled(Link)`
       if (props.id === "type-B-1") return "#6855e0";
       if (props.id === "type-B-2") return "#fff";
     }};
+   
   }
   border: ${(props) => {
     if (props.id === "type-A") return "0";
     if (props.id === "type-B-1" || props.id === "type-B-2")
       return "2px solid #6855e0";
-    if (props.id === "type-C") return "3px solid #131313";
   }};
   border-radius: ${(props) => {
     if (props.id === "type-B-1" || props.id === "type-B-2") return "4.5px";
+    if (props.id === "type-C") return "50px";
   }};
   box-shadow: ${(props) => {
     if (props.id === "type-B-1" || props.id === "type-B-2")
       return "0 0 20px rgba(104, 85, 224, 0.4);";
   }};
   transition: 0.3s;
-  border-image: ${(props) => {
-    if (props.id === "type-C")
-      return "linear-gradient(to right, #373B44, #4286f4) 30";
-  }};
+  
 `;
