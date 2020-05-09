@@ -101,25 +101,25 @@ const LinkButton = styled(Link)`
     if (props.id === "type-C") return "#fff";
   }};
   background-color: ${(props) => {
-    if (props.id === "type-B-2") return "#6855e0";
-    if (props.id === "type-C") return "#1e90ff";
+    if (props.id === "type-B-2") return "#3d4fb2";
+    if (props.id === "type-C") return "#f50057";
   }};
   &:hover {
     color: ${(props) => {
       if (props.id === "type-A") return "#536dfe";
       if (props.id === "type-B-1") return "#fff";
-      if (props.id === "type-B-2") return "#6855e0";
+      if (props.id === "type-B-2") return "#3d4fb2";
     }};
     background-color: ${(props) => {
-      if (props.id === "type-B-1") return "#6855e0";
+      if (props.id === "type-B-1") return "#3d4fb2";
       if (props.id === "type-B-2") return "#fff";
+      if (props.id === "type-C") return "#d1004a";
     }};
-   
   }
   border: ${(props) => {
     if (props.id === "type-A") return "0";
     if (props.id === "type-B-1" || props.id === "type-B-2")
-      return "2px solid #6855e0";
+      return "2px solid #3d4fb2";
   }};
   border-radius: ${(props) => {
     if (props.id === "type-B-1" || props.id === "type-B-2") return "4.5px";
@@ -128,7 +128,9 @@ const LinkButton = styled(Link)`
   box-shadow: ${(props) => {
     if (props.id === "type-B-1" || props.id === "type-B-2")
       return "0 0 20px rgba(104, 85, 224, 0.4);";
+    if (props.id === "type-C") return "0 8px 6px -8px #000000";
   }};
-  transition: 0.3s;
-  
+  transition: ${(props) => {
+    if(props.id === "type-C") return "background 250ms ease-in-out, transform 150ms ease";
+  }};
 `;

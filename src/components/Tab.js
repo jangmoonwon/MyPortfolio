@@ -23,9 +23,17 @@ const LinkButton = styled(Link)`
   }
 `;
 
+const Img = styled.img`
+width: 23px;
+height: 23px;
+margin-left: 25px;
+margin-bottom: 6px;
+`;
+
 function Tab() {
   return (
     <Container>
+     <Img src="/img/Logo.png" id="Logo" />
       <LinkButton to="/">HOME</LinkButton>
       <LinkButton to="/profile">Profile</LinkButton>
       <LinkButton to="/contents">Contents</LinkButton>
