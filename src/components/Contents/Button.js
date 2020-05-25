@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 function Button(props) {
-  const { id } = props;
   return (
     <Container>
       <Title>Button.</Title>

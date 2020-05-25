@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Main() {
   return (
     <Container>
-      <P>This is Main Pages.</P>
+      <P>제가 만든 컴포넌트를 소개합니다.</P>
     </Container>
   );
 }
@@ -22,5 +22,6 @@ const Container = styled.div`
 
 const P = styled.div`
   font-size: 50px;
+  font-weight: 600;
   color: #131313;
 `;

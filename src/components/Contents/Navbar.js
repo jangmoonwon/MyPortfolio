@@ -1,16 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import Tab from "../Tab";
 
-function Navbar(props) {
-  const { id } = props;
+function Navbar() {
   return (
     <Container>
       <Title>Navbar.</Title>
       <ContentContainer>
-        <P>현재 사용중인 탭 (보조 탭)</P>
-      <NavContainer>
-       TEST 1
-      </NavContainer>
+        <P>현재 사용중인 탭</P>
+        <NavContainer>
+          <Tab width="small" />
+        </NavContainer>
+        <P>Rounded Tab</P>
+        <NavContainer>
+          <Tab width="small" variant="rounded" />
+        </NavContainer>
       </ContentContainer>
     </Container>
   );
@@ -37,7 +41,7 @@ const ContentContainer = styled.div`
 `;
 
 const Title = styled.div`
- font-size: 70px;
+  font-size: 70px;
   font-weight: 900;
   color: #131313;
   margin-bottom: auto;
@@ -58,6 +62,5 @@ const P = styled.p`
 
 const NavContainer = styled.div`
   display: flex;
-  flex-direction: row;
   margin: auto;
 `;
