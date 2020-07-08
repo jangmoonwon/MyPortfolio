@@ -7,11 +7,11 @@ function Profile() {
     <Container>
       <ProfileContainer>
         <ProfileImage src="/Img/icon.png" alt="Profile" />
-        <Info>안녕하세요. <br/>신입개발자 장문원입니다.</Info>
-        <Url a href="https://github.com/jangmoonwon">Github 둘러보기 〉</Url>
-        <Url a href="https://velog.io/@jangmoonwon">Velog 둘러보기 〉</Url>
+        <Info>
+          Profile
+        </Info>
+        <Hr />
       </ProfileContainer>
-      <LinkButton to="/">홈으로 가기</LinkButton>
     </Container>
   );
 }
@@ -40,11 +40,11 @@ const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #131313;
-  border: 4.5px solid #333333;
+  background-color: #f9f9fa;
   border-radius: 4.5px;
   width: 65vh;
-  height: 70vh;
+  height: 75vh;
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.5);
 `;
 
 const ProfileImage = styled.img`
@@ -53,24 +53,19 @@ const ProfileImage = styled.img`
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #333333;
+  background-color: #fec202;
 `;
 
 const Info = styled.div`
-margin-top: 15px;
-font-size: 35px;
-font-weight: 400;
-color: #fff;
+  margin-top: 15px;
+  font-size: 35px;
+  font-weight: 500;
 `;
 
-const Url = styled.a`
-margin-top: 20px;
-font-size: 30px;
-font-weight: 300;
-color: #fff;
-text-decoration: none;
-&:hover {
-    color: #536dfe;
-    transition: 0.3s;
-  }
+const Hr = styled.hr`
+  width: 50vh;
+  height: 2px;
+  margin-top: 35px;
+  background-color: #888888;
+  border: 0;
 `;

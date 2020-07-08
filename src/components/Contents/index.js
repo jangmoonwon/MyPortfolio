@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Route, Switch} from "react-router-dom";
+import { NavLink, Route, Switch} from "react-router-dom";
 import styled from "styled-components";
 import Main from "../Contents/Main";
 import Button from "../Contents/Button";
@@ -29,14 +29,17 @@ const ContentConatiner = styled.div`
   height: 88vh;
 `;
 
-const LinkButton = styled(Link)`
+const LinkButton = styled(NavLink)`
   justify-content: center;
   margin: auto;
   text-decoration: none;
   color: #131313;
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 400;
   &:hover {
+    color: #e91e63;
+  }
+  &.active {
     color: #e91e63;
   }
 `;

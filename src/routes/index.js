@@ -5,6 +5,7 @@ import Home from "../components/Home";
 import Profile from "../components/Profile";
 import Contents from "../components/Contents";
 import Error from "../components/Error";
+import About from "../components/About";
 
 const Container = styled.div`
   display: flex;
@@ -22,7 +23,8 @@ const RootRouter = () => {
         <Route exact path="/" component={Home} />
         <Route path="/profile" component={Profile} />
         <Route path="/contents" component={Contents} />
-        <Route path="/" component={Error} />
+        <Route path="/about" component={About} />
+        <Route component={Error} />
       </Switch>
     </Container>
   );

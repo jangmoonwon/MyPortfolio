@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
@@ -12,7 +12,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 50px;
+  height: 60px;
   width: ${({ width }) => TAB_WIDTH[width]};
   background-color: #333333;
   border-radius: ${({ variant }) => {
@@ -21,36 +21,41 @@ const Container = styled.div`
   }};
 `;
 
-const LinkButton = styled(Link)`
+const LinkButton = styled(NavLink)`
+  display: flex;
   justify-content: center;
   margin: auto;
   text-decoration: none;
   color: #cccccc;
-  font-size: 25px;
-  font-weight: 300;
+  font-size: 27px;
+  font-weight: 400;
   &:hover {
-    color: #fff;
+    color: #eb4559;
   }
-  &:active {
-    color: red;
+  &.active {
+    color: #eb4559;
   }
 `;
 
 const Img = styled.img`
-  width: 23px;
-  height: 23px;
+  width: 27px;
+  height: 27px;
   margin-left: 25px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 `;
 
 function Tab(props) {
   const { width = "normal", variant = "square" } = props;
   return (
     <Container width={width} variant={variant}>
-      <Img src="/img/Logo.png" id="Logo" />
-      <LinkButton to="/" >HOME</LinkButton>
-      <LinkButton to="/profile" >Profile</LinkButton>
-      <LinkButton to="/contents" >Contents</LinkButton>
+      <NavLink to="/">
+        <Img src="/img/Logo.png" id="Logo" />
+      </NavLink>
+      <LinkButton exact to="/">
+        HOME
+      </LinkButton>
+      <LinkButton to="/profile">Profile</LinkButton>
+      <LinkButton to="/contents">Contents</LinkButton>
     </Container>
   );
 }
