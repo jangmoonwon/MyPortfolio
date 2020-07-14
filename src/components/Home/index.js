@@ -28,7 +28,7 @@ const Container = styled.div`
 const HeaderText = styled.div`
   font-size: 35px;
   height: 20vh;
-  margin-top: -15vh;
+  margin-top: -13vh;
   color: #ffffff;
 `;
 
