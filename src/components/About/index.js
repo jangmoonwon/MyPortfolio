@@ -9,7 +9,7 @@ function About(props) {
         About
       </HeaderText>
       <HeaderText style={{ marginTop: -23 }}>iProject 🆂</HeaderText>
-      <Text style={{ marginTop: 15 }}>
+      <Text style={{ marginTop: 40, textDecoration: "none" }}>
         이 프로젝트는 TWMC-Components를 재활용해서 만들었습니다.
       </Text>
       <ImageContainer style={{ marginTop: 7 }}>
@@ -17,13 +17,15 @@ function About(props) {
         <TwmcImage src="/Img/twmc-toggle-switch.png" alt="button" />
         <TwmcImage src="/Img/twmc-profile-image.png" alt="button" />
       </ImageContainer>
-      <Text style={{ marginTop: 15 }}>
-        TWMC의 다양한 컴포넌트들을 만나보세요.
-      </Text>
-      <a href="https://github.com/twmc-kor/twmc-react-components">
-      <LogoImage src="/Img/twmc_logo.png" alt="twmc-logo" />
+      <a
+        href="https://github.com/twmc-kor/twmc-react-components"
+        style={{ textDecoration: "none" }}
+      >
+        <Text style={{ marginTop: 15, color: "#ffdd59" }}>
+          TWMC의 다양한 컴포넌트들을 만나보세요.
+        </Text>
       </a>
-      <LinkButton to="/" style={{ marginTop: 25 }}>
+      <LinkButton to="/" style={{ marginTop: 45 }}>
         홈으로 〉
       </LinkButton>
     </Container>
@@ -34,7 +36,6 @@ export default About;
 
 const Container = styled.div`
   display: flex;
-  /* position: relative; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -57,6 +58,9 @@ const Text = styled.div`
   font-size: 30px;
   color: #fff;
   text-align: center;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const TwmcImage = styled.img`
@@ -64,13 +68,6 @@ const TwmcImage = styled.img`
   height: 320px;
   border-radius: 7px;
   margin: 7px;
-`;
-
-const LogoImage = styled.img`
-  width: 60px;
-  height: 60px;
-  /* border-radius: 50%;
-  background-color: #fff; */
 `;
 
 const LinkButton = styled(Link)`

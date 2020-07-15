@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
+const WhiteHeart = () => <Icon src={"/Img/heart.png"} alt="whiteheart" />;
+const RedHeart = () => <Icon src={"/Img/redheart.png"} alt="redheart" />;
+
 function Profile() {
+  const [state, setState] = useState(false);
   return (
     <Container>
       <ProfileImage src="/Img/moonwon.jpg" alt="Profile" />
@@ -18,9 +22,19 @@ function Profile() {
         나아가고 싶은 큰 포부가 있습니다!
       </InfoText>
       <LinkContainer>
-      <LinkButton href="https://velog.io/@jangmoonwon">GITHUB</LinkButton>
-      <IconButton src="/Img/heart.png" alt="heart" />
-      <LinkButton href="https://github.com/jangmoonwon">VELOG</LinkButton>
+        <a href="https://velog.io/@jangmoonwon">
+          <LinkButton>GITHUB</LinkButton>
+        </a>
+        <IconButton
+          onClick={() => {
+            setState(!state);
+          }}
+        >
+          {state ? <RedHeart /> : <WhiteHeart />}
+        </IconButton>
+        <a href="https://github.com/jangmoonwon">
+          <LinkButton>VELOG</LinkButton>
+        </a>
       </LinkContainer>
     </Container>
   );
@@ -60,23 +74,41 @@ const InfoText = styled.div`
 `;
 
 const LinkContainer = styled.div`
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-around;
-margin-top: auto;
-width: 70vh;
-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: auto;
+  width: 70vh;
+  height: 10vh;
 `;
 
-const LinkButton = styled.a`
-font-size: 25px;
-font-weight: 700;
-color: #f69e7b;
-text-decoration: underline;
+const LinkButton = styled.button`
+  background-color: transparent;
+  border: 0;
+  font-size: 27px;
+  font-weight: 700;
+  color: #f69e7b;
+  text-decoration: underline;
+  &:hover {
+    background-color: #808080;
+    border-radius: 4.5px;
+    cursor: pointer;
+  }
 `;
 
-const IconButton = styled.img`
-width: 40px;
-height: 40px;
+const IconButton = styled.button`
+  background-color: transparent;
+  border: 0;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+const Icon = styled.img`
+  width: 40px;
+  height: 40px;
 `;
