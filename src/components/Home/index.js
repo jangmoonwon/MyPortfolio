@@ -3,15 +3,14 @@ import styled, { css, keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 
 function Home() {
+  const projectName = "iProject 🆂";
+  const title = ["노멀함.", <br />, "그러나 특별함."];
+  const aboutButton = "더 알아보기 〉";
   return (
     <Container>
-      <HeaderText>iProject 🆂</HeaderText>
-      <MainText efc>
-        노멀함.
-        <br />
-        그러나 특별함.
-      </MainText>
-      <LinkButton to="/about">더 알아보기 〉</LinkButton>
+      <HeaderText>{projectName}</HeaderText>
+      <MainText efc>{title}</MainText>
+      <LinkButton to="/about">{aboutButton}</LinkButton>
     </Container>
   );
 }

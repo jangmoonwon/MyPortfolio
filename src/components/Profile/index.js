@@ -6,21 +6,25 @@ const RedHeart = () => <Icon src={"/Img/redheart.png"} alt="redheart" />;
 
 function Profile() {
   const [state, setState] = useState(false);
+  const name = "JANG MOON WON";
+  const description = [
+    "안녕하세요.",
+    <br />,
+    "개발꿈나무🌱 신입개발자 장문원입니다.",
+    <br />,
+    "무럭무럭 성장중이며,",
+    <br />,
+    "더 큰 꿈나무🌳를 바라보며,",
+    <br />,
+    "나아가고 싶은 큰 포부가 있습니다!",
+  ];
   return (
     <Container>
       <ProfileImage src="/Img/moonwon.jpg" alt="Profile" />
-      <NameText>JANG MOON WON</NameText>
-      <InfoText>
-        안녕하세요.
-        <br />
-        개발꿈나무🌱 신입개발자 장문원입니다.
-        <br />
-        무럭무럭 성장중이며,
-        <br />
-        더 큰 꿈나무🌳를 바라보며,
-        <br />
-        나아가고 싶은 큰 포부가 있습니다!
-      </InfoText>
+      <NameContent>{name}</NameContent>
+      <DescContent>
+       {description}
+      </DescContent>
       <LinkContainer>
         <a href="https://velog.io/@jangmoonwon">
           <LinkButton>GITHUB</LinkButton>
@@ -59,14 +63,14 @@ const ProfileImage = styled.img`
   border-top-right-radius: 4.5px;
 `;
 
-const NameText = styled.div`
+const NameContent = styled.div`
   margin: 17px 0 0 20px;
   font-size: 40px;
   font-weight: 600;
   color: #f69e7b;
 `;
 
-const InfoText = styled.div`
+const DescContent = styled.div`
   margin: 15px 0 0 20px;
   font-size: 30px;
   font-weight: 300;
