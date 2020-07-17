@@ -10,7 +10,7 @@ function Home() {
     <Container>
       <HeaderText>{projectName}</HeaderText>
       <MainText efc>{title}</MainText>
-      <LinkButton to="/about">{aboutButton}</LinkButton>
+      <LinkButton to="/aboutpage">{aboutButton}</LinkButton>
     </Container>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-function About() {
+function AboutPage() {
   const subProjectName = "About";
   const projectName = "iProject 🆂";
   const description =
@@ -19,9 +19,10 @@ function About() {
         {description}
       </Text>
       <ImageContainer style={{ marginTop: 7 }}>
-        <TwmcImage src="/Img/twmc-button.png" alt="button" />
-        <TwmcImage src="/Img/twmc-toggle-switch.png" alt="button" />
-        <TwmcImage src="/Img/twmc-profile-image.png" alt="button" />
+        <TwmcImage src={require('../assets/twmc-button.png')} alt="button" />
+        <TwmcImage src={require('../assets/twmc-profile-image.png')} alt="profileImage" />
+        <TwmcImage src={require('../assets/twmc-toggle-switch.png')} alt="toggleSwitch" />
+        
       </ImageContainer>
       <a
         href="https://github.com/twmc-kor/twmc-react-components"
@@ -38,7 +39,7 @@ function About() {
   );
 }
 
-export default About;
+export default AboutPage;
 
 const Container = styled.div`
   display: flex;

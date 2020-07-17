@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function Error() {
+function ErrorPage() {
   return (
     <Container>
       <P>찾을 수 없는 페이지입니다.</P>
@@ -9,7 +9,7 @@ function Error() {
   );
 }
 
-export default Error;
+export default ErrorPage;
 
 const Container = styled.div`
   display: flex;

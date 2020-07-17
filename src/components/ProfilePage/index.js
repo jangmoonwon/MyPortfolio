@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const WhiteHeart = () => <Icon src={"/Img/heart.png"} alt="whiteheart" />;
-const RedHeart = () => <Icon src={"/Img/redheart.png"} alt="redheart" />;
+const WhiteHeart = () => (
+  <Icon src={require("../assets/heart.png")} alt="whiteheart" />
+);
+const RedHeart = () => (
+  <Icon src={require("../assets/red-heart.png")} alt="redheart" />
+);
 
 function Profile() {
   const [state, setState] = useState(false);
@@ -20,11 +24,9 @@ function Profile() {
   ];
   return (
     <Container>
-      <ProfileImage src="/Img/moonwon.jpg" alt="Profile" />
+      <ProfileImage src={require("../assets/moonwon.jpg")} alt="Profile" />
       <NameContent>{name}</NameContent>
-      <DescContent>
-       {description}
-      </DescContent>
+      <DescContent>{description}</DescContent>
       <LinkContainer>
         <a href="https://velog.io/@jangmoonwon">
           <LinkButton>GITHUB</LinkButton>

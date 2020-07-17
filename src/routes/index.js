@@ -1,11 +1,11 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import styled from "styled-components";
-import Home from "../components/Home";
-import Profile from "../components/Profile";
+import HomePage from "../components/HomePage";
+import ProfilePage from "../components/ProfilePage";
 import Contents from "../components/Contents";
-import Error from "../components/Error";
-import About from "../components/About";
+import ErrorPage from "../components/ErrorPage";
+import AboutPage from "../components/AboutPage";
 
 const Container = styled.div`
   display: flex;
@@ -20,11 +20,11 @@ const RootRouter = () => {
   return (
     <Container>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/profile" component={Profile} />
+        <Route exact path="/" component={HomePage} />
+        <Route path="/profilepage" component={ProfilePage} />
         <Route path="/contents" component={Contents} />
-        <Route path="/about" component={About} />
-        <Route component={Error} />
+        <Route path="/aboutpage" component={AboutPage} />
+        <Route component={ErrorPage} />
       </Switch>
     </Container>
   );
