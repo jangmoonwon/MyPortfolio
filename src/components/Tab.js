@@ -39,7 +39,10 @@ function Tab() {
   return (
     <Container>
       <NavLink exact to="/">
-        <AppleLogo src="../Img/apple-logo.png" alt="apple-logo" />
+        <AppleLogo
+          src={require("../components/assets/apple-logo.png")}
+          alt="apple-logo"
+        />
       </NavLink>
       <LinkButton exact to="/">
         HOME
