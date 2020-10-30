@@ -4,6 +4,7 @@ import styled from "styled-components";
 import HomePage from "../components/HomePage";
 import ProfilePage from "../components/ProfilePage";
 import Contents from "../components/Contents";
+import ErrorPage from "../components/ErrorPage";
 import AboutPage from "../components/AboutPage";
 
 const Container = styled.div`
@@ -23,8 +24,10 @@ const RootRouter = () => {
         <Route path="/profilepage" component={ProfilePage} />
         <Route path="/contents" component={Contents} />
         <Route path="/aboutpage" component={AboutPage} />
+        <Route component={ErrorPage} />
       </Switch>
     </Container>
+    
   );
 };
 

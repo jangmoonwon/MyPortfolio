@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-function ErrorPage() {
+function 
+ErrorPage() {
   return (
     <Container>
       <P>찾을 수 없는 페이지입니다.</P>
