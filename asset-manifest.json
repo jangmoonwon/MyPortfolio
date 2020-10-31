@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/MyPortfolio/static/js/main.113f570a.chunk.js",
-    "main.js.map": "/MyPortfolio/static/js/main.113f570a.chunk.js.map",
-    "runtime-main.js": "/MyPortfolio/static/js/runtime-main.1eda3a97.js",
-    "runtime-main.js.map": "/MyPortfolio/static/js/runtime-main.1eda3a97.js.map",
-    "static/js/2.f19ff9f3.chunk.js": "/MyPortfolio/static/js/2.f19ff9f3.chunk.js",
-    "static/js/2.f19ff9f3.chunk.js.map": "/MyPortfolio/static/js/2.f19ff9f3.chunk.js.map",
-    "index.html": "/MyPortfolio/index.html",
-    "precache-manifest.3ef6e2d338239aae3f47df098595f928.js": "/MyPortfolio/precache-manifest.3ef6e2d338239aae3f47df098595f928.js",
-    "service-worker.js": "/MyPortfolio/service-worker.js",
-    "static/js/2.f19ff9f3.chunk.js.LICENSE.txt": "/MyPortfolio/static/js/2.f19ff9f3.chunk.js.LICENSE.txt",
-    "static/media/moonwon.jpg": "/MyPortfolio/static/media/moonwon.2d8d8b5b.jpg",
-    "static/media/twmc-button.png": "/MyPortfolio/static/media/twmc-button.6a4e432b.png",
-    "static/media/twmc-profile-image.png": "/MyPortfolio/static/media/twmc-profile-image.057437c5.png",
-    "static/media/twmc-toggle-switch.png": "/MyPortfolio/static/media/twmc-toggle-switch.21dd14e5.png"
+    "main.js": "/static/js/main.113f570a.chunk.js",
+    "main.js.map": "/static/js/main.113f570a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ccb9ac1e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ccb9ac1e.js.map",
+    "static/js/2.eedd552c.chunk.js": "/static/js/2.eedd552c.chunk.js",
+    "static/js/2.eedd552c.chunk.js.map": "/static/js/2.eedd552c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c8ce60094fa13d010ee22a44daa8b43a.js": "/precache-manifest.c8ce60094fa13d010ee22a44daa8b43a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.eedd552c.chunk.js.LICENSE.txt": "/static/js/2.eedd552c.chunk.js.LICENSE.txt",
+    "static/media/moonwon.jpg": "/static/media/moonwon.2d8d8b5b.jpg",
+    "static/media/twmc-button.png": "/static/media/twmc-button.6a4e432b.png",
+    "static/media/twmc-profile-image.png": "/static/media/twmc-profile-image.057437c5.png",
+    "static/media/twmc-toggle-switch.png": "/static/media/twmc-toggle-switch.21dd14e5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1eda3a97.js",
-    "static/js/2.f19ff9f3.chunk.js",
+    "static/js/runtime-main.ccb9ac1e.js",
+    "static/js/2.eedd552c.chunk.js",
     "static/js/main.113f570a.chunk.js"
   ]
 }
