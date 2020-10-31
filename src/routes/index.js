@@ -33,11 +33,11 @@ const RootRouter = () => {
   return (
     <Container>
       <Switch>
-        <Route exact path="/" component={HomePage} />
         <Route path="/profilepage" component={ProfilePage} />
         <Route path="/contents" component={Contents} />
         <Route path="/aboutpage" component={AboutPage} />
         {/* <Route component={ErrorPage} /> */}
+        <Route exact path="/" component={HomePage} />
       </Switch>
     </Container>
   );
