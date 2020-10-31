@@ -7,13 +7,13 @@ import Contents from "../components/Contents";
 // import ErrorPage from "../components/ErrorPage";
 import AboutPage from "../components/AboutPage";
 
-function ErrorPage() {
-  return (
-    <Container>
-      <P>찾을 수 없는 페이지입니다.</P>
-    </Container>
-  );
-}
+// function ErrorPage() {
+//   return (
+//     <Container>
+//       <P>찾을 수 없는 페이지입니다.</P>
+//     </Container>
+//   );
+// }
 
 const Container = styled.div`
   display: flex;
@@ -37,7 +37,7 @@ const RootRouter = () => {
         <Route path="/profilepage" component={ProfilePage} />
         <Route path="/contents" component={Contents} />
         <Route path="/aboutpage" component={AboutPage} />
-        <Route component={ErrorPage} />
+        {/* <Route component={ErrorPage} /> */}
       </Switch>
     </Container>
   );
