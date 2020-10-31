@@ -7,7 +7,7 @@ import Contents from "../components/Contents";
 // import ErrorPage from "../components/ErrorPage";
 import AboutPage from "../components/AboutPage";
 
-export default function ErrorPage() {
+function ErrorPage() {
   return (
     <Container>
       <P>찾을 수 없는 페이지입니다.</P>
